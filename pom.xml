@@ -6,7 +6,7 @@
 	<groupId>com.alm</groupId>
 	<artifactId>spring-boot-dubbo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>spring-boot-dubbo</name>
 	<description>Demo project for Spring Boot</description>
@@ -63,18 +63,12 @@
 			<artifactId>zkclient</artifactId>
 			<version>0.10</version>
 		</dependency>
-
-
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
-
+	<modules>
+		<module>spring-boot-dubbo-api</module>
+		<module>spring-boot-dubbo-consumer</module>
+		<module>spring-boot-dubbo-provider</module>
+	</modules>
 </project>
